@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "blockchaindevbootcamp_backend": {
+      "main": "src/blockchaindevbootcamp_backend/main.mo",
+      "type": "motoko"
+    },
+    "blockchaindevbootcamp_frontend": {
+      "dependencies": [
+        "blockchaindevbootcamp_backend"
+      ],
+      "source": [
+        "src/blockchaindevbootcamp_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
